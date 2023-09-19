@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/continuepage"
+    android:orientation="vertical"
+    tools:context=".continue_with_page">
+
+
+    <ScrollView
+        android:id="@+id/scroll_continue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/continue_text_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="350dp"
+                    android:text="SignUp"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/mahroon"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_continue_mail"
+                    android:layout_width="320dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/yellow_rounded_corner_button"
+                    android:drawableLeft="@drawable/baseline_email_24"
+                    android:text="Continue with Mail"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textColor="@color/mahroon" />
+
+                <Button
+                    android:id="@+id/btn_continue_guest"
+                    android:layout_width="270dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/white_yellow_border_button"
+                    android:layout_marginTop="10dp"
+                    android:text="Sign As Guest"
+                    android:textAllCaps="false"
+                    android:textColor="@color/mahroon"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

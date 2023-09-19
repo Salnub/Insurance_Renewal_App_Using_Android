@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Renewal_process_screen"
+    android:background="@drawable/overview"
+    >
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:text="RENEWAL PROCESS"
+        android:textSize="22sp"
+        android:background="@color/bordercolor"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="115dp"
+        android:layout_height="23dp"
+        android:text="POLICY INFO:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:background="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <EditText
+        android:id="@+id/editText_renewal_policy_info"
+        android:background="@drawable/red_border"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="140dp"
+        android:layout_height="23dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:background="@color/yellow"
+        android:text="RENEWAL DATE:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_renewal_policy_info" />
+
+    <Button
+        android:id="@+id/btn_start_date_renewal"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="Start\ndate"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/btn_end_date_renewal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        android:onClick="showDatePickerDialog"
+        android:background="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btn_end_date_renewal"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="16dp"
+        android:text="END\nDATE"
+        android:onClick="showDatePickerDialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toEndOf="@+id/btn_start_date_renewal"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+    <EditText
+        android:id="@+id/editText_price_calculation_renewal"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="@drawable/red_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRICE\nCALCULATION"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText_price_calculation_renewal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.861" />
+
+    <Button
+        android:id="@+id/btn_next_renewal"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/green"
+        android:text="next"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cancel_renewal_process"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_price_calculation_renewal" />
+
+    <Button
+        android:id="@+id/btn_cancel_renewal_process"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:background="@color/green"
+        android:text="cancel"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_help_renewal"
+        app:layout_constraintStart_toEndOf="@+id/btn_next_renewal"
+        app:layout_constraintTop_toBottomOf="@+id/editText_price_calculation_renewal"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <Button
+        android:id="@+id/btn_help_renewal"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/green"
+        android:text="Help"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_cancel_renewal_process"
+        app:layout_constraintTop_toBottomOf="@+id/editText_price_calculation_renewal" />
+
+    <Button
+        android:id="@+id/btn_calculate_renewal_process"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/bordercolor"
+        android:text="calculate"
+        android:textColor="@color/yellow"
+        app:layout_constraintEnd_toStartOf="@+id/btn_help_renewal"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toEndOf="@+id/btn_next_renewal"
+        app:layout_constraintTop_toBottomOf="@+id/editText_price_calculation_renewal" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

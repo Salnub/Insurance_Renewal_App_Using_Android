@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/overview"
+    android:orientation="vertical"
+    tools:context=".Desired_Option_Screen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Click on your desired option"
+                    android:layout_marginTop="100dp"
+                    android:textColor="@color/white"
+                    android:background="#B2000000"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    />
+
+                <Button
+                    android:id="@+id/btn_renewal_info_desired"
+                    android:layout_width="300dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="renewal information"
+                    android:textColor="@color/yellow"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/blue_button"
+                    />
+
+                <Button
+                    android:id="@+id/btn_initiate_renewal_process_desired"
+                    android:layout_width="300dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="initiate renewalprocess"
+                    android:textColor="@color/yellow"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/blue_button"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_policy_details_desired"
+                    android:layout_width="300dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="policy details"
+                    android:textColor="@color/yellow"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/blue_button"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_payment_pdf_desired"
+                    android:layout_width="300dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="payment &amp; pdf generation"
+                    android:textColor="@color/yellow"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/blue_button"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_setting_support"
+                    android:layout_width="300dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Setting &amp; support"
+                    android:textColor="@color/yellow"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/blue_button"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

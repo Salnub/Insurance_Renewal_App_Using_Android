@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Insurance Plans</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F0F0F0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .insurance-plan {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #F5F5F5;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .insurance-plan h2 {
+            color: #007BFF;
+        }
+
+        .insurance-plan p {
+            margin: 0;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .redirect-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .redirect-button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Car Insurance Plans</h1>
+</header>
+
+<div class="container">
+    <div class="insurance-plan">
+        <h2>Comprehensive Coverage Insurance</h2>
+        <h3>Policy Number: 732</h3>
+        <p>
+            Comprehensive car insurance provides coverage for damages not caused by a collision, such as theft, vandalism, or natural disasters.
+            1 year cost of this is 7% of the car's value
+        </p>
+    </div>
+
+    <div class="insurance-plan">
+        <h2>Liability Insurance</h2>
+        <h3>Policy Number: 829</h3>
+        <p>
+            Liability insurance covers the costs of bodily injury and property damage that you may cause to others in an accident.
+            1 year cost of this is 5% of the car's value
+        </p>
+    </div>
+
+    <div class="insurance-plan">
+        <h2>Collision Coverage Insurance</h2>
+        <h3>Policy Number: 367</h3>
+        <p>
+            Collision coverage pays for the repair or replacement of your vehicle if it's damaged in a collision with another vehicle or object.
+        1 year cost of this is 3% of the car's value
+        </p>
+    </div>
+
+    <div class="button-container">
+        <a class="redirect-button" href="javascript:void(0);" onclick="openDesiredOptionScreen()">Explore Options</a>
+    </div>
+    <script>
+        function openDesiredOptionScreen(){
+
+        Android.openDesiredOptionScreen();
+        }
+    </script>
+
+
+</div>
+
+<footer>
+    &copy; 2023 Car Insurance Company
+</footer>
+</body>
+</html>

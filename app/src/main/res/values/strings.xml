@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Taawun Car Insurance</string>
+    <string-array name="policy_types">
+        <item>Comprehensive</item>
+        <item>Liability</item>
+        <item>Collision</item>
+    </string-array>
+
+    <string-array name="billing_frequencies">
+        <item>Monthly</item>
+        <item>Quarterly</item>
+        <item>Annually</item>
+    </string-array>
+    <string-array name="Credit_Debit">
+        <item>Credit or Debit Cards</item>
+        <item>Meezan</item>
+        <item>Alfalah</item>
+        <item>Allied</item>
+        <item>N/A</item>
+    </string-array>
+    <string-array name="Bank_transfers">
+        <item>Bank Tranfers</item>
+        <item>Faysal Bank</item>
+        <item>HBL</item>
+        <item>Meezan</item>
+        <item>N/A</item>
+    </string-array>
+    <string-array name="Online_Payment">
+        <item>Online Payment</item>
+        <item>Easypaisa</item>
+        <item>Sadapay</item>
+        <item>Nayapay</item>
+        <item>N/A</item>
+    </string-array>
+    <string-array name="Prepaid_cards">
+        <item>Prepaid cards</item>
+        <item>Visa</item>
+        <item>Mastercard</item>
+        <item>Union</item>
+        <item>N/A</item>
+    </string-array>
+</resources>

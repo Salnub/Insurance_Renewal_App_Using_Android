@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/overview"
+    tools:context=".Policy_details_screen"
+
+    >
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:background="@color/bordercolor"
+        android:text="POLICY DETAILS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.171" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:background="@color/yellow"
+        android:text="POLICY INFO:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <EditText
+        android:id="@+id/btn_policy_number"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="6dp"
+        android:background="@color/grey"
+        android:hint="Policy  number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btn_policy_holder_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/btn_policy_holder_name"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:hint="POLICY'S HOLDER NAME"
+        android:textColor="@color/black"
+        android:background="@color/grey"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_policy_number"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Spinner
+        android:id="@+id/btn_policy_type"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/baseline_view_headline_24"
+        android:background="@color/grey"
+        android:hint="Select Policy Type"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_policy_number" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/yellow"
+        android:text="AMOUNT INFO:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_policy_type" />
+
+    <EditText
+        android:textAlignment="center"
+        android:id="@+id/btn_current_amount"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/grey"
+        android:hint="CURRENT POLICY\nAMOUNT"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btn_billing_frequency"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <Spinner
+        android:id="@+id/btn_billing_frequency"
+        android:layout_width="195dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:background="@color/grey"
+        android:drawableRight="@drawable/baseline_view_headline_24"
+        android:text="BILLING\nFREQUENCY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_current_amount"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/bordercolor"
+        android:text="POLICY DOCUMENT PDF"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_current_amount" />
+
+    <ImageButton
+        android:id="@+id/btn_download_policy_details"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+
+        android:layout_marginTop="7dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_print_policy_details"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.704"
+        app:srcCompat="@drawable/baseline_download_24" />
+
+    <ImageButton
+        android:id="@+id/btn_print_policy_details"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="23dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cancel_policy_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_download_policy_details"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:srcCompat="@drawable/baseline_print_24" />
+
+    <Button
+        android:id="@+id/btn_next_policy_details"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="112dp"
+        android:background="@color/green"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cancel_policy_details"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_current_amount" />
+
+    <Button
+        android:id="@+id/btn_cancel_policy_details"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="23dp"
+        android:background="@color/green"
+        android:text="cancel"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_help_policy_details"
+        app:layout_constraintStart_toEndOf="@+id/btn_next_policy_details"
+        app:layout_constraintTop_toBottomOf="@+id/btn_print_policy_details" />
+
+    <Button
+        android:id="@+id/btn_help_policy_details"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="112dp"
+        android:background="@color/green"
+        android:text="help"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_cancel_policy_details"
+        app:layout_constraintTop_toBottomOf="@+id/btn_billing_frequency" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

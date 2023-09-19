@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginpage"
+    android:orientation="vertical"
+    tools:context=".login_screen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_email_signin"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:layout_marginTop="380dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/mahroon"
+
+                    android:textSize="20sp"
+                    />
+                <EditText
+                    android:id="@+id/editText_signin_email"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:hint="Enter Your Email"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@color/mahroon"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/dotted_rounded_button"
+                    android:drawableRight="@drawable/baseline_email_24"
+                    />
+                <TextView
+                    android:id="@+id/text_password_signin"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/mahroon"
+                    android:textSize="20sp"
+                    />
+                <EditText
+                    android:id="@+id/editText_signin_password"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:hint="Enter your password"
+                    android:layout_marginLeft="40dp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/mahroon"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/dotted_rounded_button"
+                    android:drawableRight="@drawable/baseline_lock_24"
+                    />
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="320dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/blue_rounded_corner_button"
+                    android:text="login"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="35dp"
+                    />
+
+                <TextView
+                    android:id="@+id/signup_redirect_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:text="Do not have an account? \n Signup here"
+                    android:textColor="@color/bordercolor"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

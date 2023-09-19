@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#ffde5d</color>
+    <color name="bordercolor">#285c94</color>
+    <color name="mahroon">#840E0E</color>
+    <color name="green">#4CAF50</color>
+    <color name="grey">#CCCCCC</color>
+</resources>
